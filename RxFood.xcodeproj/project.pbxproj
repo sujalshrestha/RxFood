@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		0416446121B96A4A00F27B72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416446021B96A4A00F27B72 /* AppDelegate.swift */; };
 		0416446321B96A4A00F27B72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416446221B96A4A00F27B72 /* ViewController.swift */; };
-		0416446621B96A4A00F27B72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0416446421B96A4A00F27B72 /* Main.storyboard */; };
 		0416446921B96A4A00F27B72 /* RxFood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0416446721B96A4A00F27B72 /* RxFood.xcdatamodeld */; };
 		0416446B21B96A4B00F27B72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0416446A21B96A4B00F27B72 /* Assets.xcassets */; };
-		0416446E21B96A4B00F27B72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0416446C21B96A4B00F27B72 /* LaunchScreen.storyboard */; };
+		0416447A21B9833900F27B72 /* AutoLayout+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416447921B9833900F27B72 /* AutoLayout+Ext.swift */; };
+		0416447C21B9835800F27B72 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416447B21B9835800F27B72 /* Color+Ext.swift */; };
+		0416447E21B9837600F27B72 /* CustomUI+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416447D21B9837600F27B72 /* CustomUI+Ext.swift */; };
+		0416448221B983AE00F27B72 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0416448021B983AE00F27B72 /* Roboto-Medium.ttf */; };
+		0416448321B983AE00F27B72 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0416448121B983AE00F27B72 /* Roboto-Regular.ttf */; };
+		0416448821B9840500F27B72 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416448721B9840500F27B72 /* LoginController.swift */; };
+		0416448E21B985B200F27B72 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0416448D21B985B200F27B72 /* Login.storyboard */; };
+		0416449121B98B1F00F27B72 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416449021B98B1F00F27B72 /* LoginViewModel.swift */; };
+		7E9EA484CA6CFA433B007A9C /* Pods_RxFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6433991FD7402A7D9B916352 /* Pods_RxFood.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0416445D21B96A4A00F27B72 /* RxFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0416446021B96A4A00F27B72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0416446221B96A4A00F27B72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0416446521B96A4A00F27B72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0416446821B96A4A00F27B72 /* RxFood.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RxFood.xcdatamodel; sourceTree = "<group>"; };
 		0416446A21B96A4B00F27B72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0416446D21B96A4B00F27B72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0416446F21B96A4B00F27B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0416447921B9833900F27B72 /* AutoLayout+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AutoLayout+Ext.swift"; sourceTree = "<group>"; };
+		0416447B21B9835800F27B72 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		0416447D21B9837600F27B72 /* CustomUI+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomUI+Ext.swift"; sourceTree = "<group>"; };
+		0416448021B983AE00F27B72 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		0416448121B983AE00F27B72 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		0416448721B9840500F27B72 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		0416448D21B985B200F27B72 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		0416449021B98B1F00F27B72 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		1A31BF3A9AD72B8F8465B23D /* Pods-RxFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxFood/Pods-RxFood.debug.xcconfig"; sourceTree = "<group>"; };
+		6433991FD7402A7D9B916352 /* Pods_RxFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3A62C239EB6099A9FB58C95 /* Pods-RxFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFood.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxFood/Pods-RxFood.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E9EA484CA6CFA433B007A9C /* Pods_RxFood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +59,8 @@
 			children = (
 				0416445F21B96A4A00F27B72 /* RxFood */,
 				0416445E21B96A4A00F27B72 /* Products */,
+				85E02FA86E96248D0CDF16D8 /* Pods */,
+				287BD45B70B82FEBCBE54296 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +75,126 @@
 		0416445F21B96A4A00F27B72 /* RxFood */ = {
 			isa = PBXGroup;
 			children = (
-				0416446021B96A4A00F27B72 /* AppDelegate.swift */,
+				0416448C21B9859800F27B72 /* Storyboards */,
+				0416448421B983EC00F27B72 /* Modules */,
+				0416447621B9830900F27B72 /* Utils */,
+				0416447521B981C500F27B72 /* SupportingFiles */,
 				0416446221B96A4A00F27B72 /* ViewController.swift */,
-				0416446421B96A4A00F27B72 /* Main.storyboard */,
-				0416446A21B96A4B00F27B72 /* Assets.xcassets */,
-				0416446C21B96A4B00F27B72 /* LaunchScreen.storyboard */,
 				0416446F21B96A4B00F27B72 /* Info.plist */,
 				0416446721B96A4A00F27B72 /* RxFood.xcdatamodeld */,
 			);
 			path = RxFood;
+			sourceTree = "<group>";
+		};
+		0416447521B981C500F27B72 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0416446021B96A4A00F27B72 /* AppDelegate.swift */,
+				0416446A21B96A4B00F27B72 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		0416447621B9830900F27B72 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0416448921B984F100F27B72 /* CustomViews */,
+				0416447F21B9839500F27B72 /* Font */,
+				0416447821B9831500F27B72 /* Helpers */,
+				0416447721B9830F00F27B72 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0416447721B9830F00F27B72 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0416447921B9833900F27B72 /* AutoLayout+Ext.swift */,
+				0416447B21B9835800F27B72 /* Color+Ext.swift */,
+				0416447D21B9837600F27B72 /* CustomUI+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0416447821B9831500F27B72 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0416447F21B9839500F27B72 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				0416448021B983AE00F27B72 /* Roboto-Medium.ttf */,
+				0416448121B983AE00F27B72 /* Roboto-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		0416448421B983EC00F27B72 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0416448521B983F300F27B72 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0416448521B983F300F27B72 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0416448F21B98B1000F27B72 /* ViewModel */,
+				0416448621B983F700F27B72 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0416448621B983F700F27B72 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0416448721B9840500F27B72 /* LoginController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0416448921B984F100F27B72 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		0416448C21B9859800F27B72 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0416448D21B985B200F27B72 /* Login.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0416448F21B98B1000F27B72 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0416449021B98B1F00F27B72 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		287BD45B70B82FEBCBE54296 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6433991FD7402A7D9B916352 /* Pods_RxFood.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85E02FA86E96248D0CDF16D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A31BF3A9AD72B8F8465B23D /* Pods-RxFood.debug.xcconfig */,
+				E3A62C239EB6099A9FB58C95 /* Pods-RxFood.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0416447221B96A4B00F27B72 /* Build configuration list for PBXNativeTarget "RxFood" */;
 			buildPhases = (
+				2C34A6AFCDEF0455E2A7B9F8 /* [CP] Check Pods Manifest.lock */,
 				0416445921B96A4A00F27B72 /* Sources */,
 				0416445A21B96A4A00F27B72 /* Frameworks */,
 				0416445B21B96A4A00F27B72 /* Resources */,
+				E57AA6041332B57805E3E3F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,45 +257,81 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0416446E21B96A4B00F27B72 /* LaunchScreen.storyboard in Resources */,
+				0416448E21B985B200F27B72 /* Login.storyboard in Resources */,
+				0416448321B983AE00F27B72 /* Roboto-Regular.ttf in Resources */,
+				0416448221B983AE00F27B72 /* Roboto-Medium.ttf in Resources */,
 				0416446B21B96A4B00F27B72 /* Assets.xcassets in Resources */,
-				0416446621B96A4A00F27B72 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C34A6AFCDEF0455E2A7B9F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxFood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E57AA6041332B57805E3E3F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxFood/Pods-RxFood-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxFood/Pods-RxFood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0416445921B96A4A00F27B72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0416447E21B9837600F27B72 /* CustomUI+Ext.swift in Sources */,
 				0416446321B96A4A00F27B72 /* ViewController.swift in Sources */,
 				0416446921B96A4A00F27B72 /* RxFood.xcdatamodeld in Sources */,
+				0416447A21B9833900F27B72 /* AutoLayout+Ext.swift in Sources */,
+				0416449121B98B1F00F27B72 /* LoginViewModel.swift in Sources */,
 				0416446121B96A4A00F27B72 /* AppDelegate.swift in Sources */,
+				0416447C21B9835800F27B72 /* Color+Ext.swift in Sources */,
+				0416448821B9840500F27B72 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		0416446421B96A4A00F27B72 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0416446521B96A4A00F27B72 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0416446C21B96A4B00F27B72 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0416446D21B96A4B00F27B72 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0416447021B96A4B00F27B72 /* Debug */ = {
@@ -284,11 +452,13 @@
 		};
 		0416447321B96A4B00F27B72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A31BF3A9AD72B8F8465B23D /* Pods-RxFood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2LVA8QJKSB;
 				INFOPLIST_FILE = RxFood/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,11 +472,13 @@
 		};
 		0416447421B96A4B00F27B72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3A62C239EB6099A9FB58C95 /* Pods-RxFood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2LVA8QJKSB;
 				INFOPLIST_FILE = RxFood/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
