@@ -15,7 +15,8 @@ struct LoginViewModel {
     let password = BehaviorRelay<String>.init(value: "")
     
     let isFormValid: Observable<Bool>
-    
+    let userData = BehaviorRelay<User?>.init(value: nil)
+
     let disposeBag = DisposeBag()
     
     init() {
@@ -30,10 +31,22 @@ struct LoginViewModel {
         var isUserValid = false
         users.forEach { (user) in
             if email.value == user.email && password.value == user.password {
+                userData.accept(user)
+                self.saveUser(user: user)
                 isUserValid = true
             }
         }
         return isUserValid
     }
-    
+
+    func saveUser(user: User) {
+        UserDefaultManager.shared.saveUserId(with: user.userId)
+        let person = UsersCoreData(context: PersistanceManager.shared.context)
+        person.email = user.email
+        person.firstname = user.firstname
+        person.lastname = user.lastname
+        person.userid = Int16(user.userId)
+        PersistanceManager.shared.save()
+    }
+
 }

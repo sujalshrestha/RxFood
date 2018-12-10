@@ -14,9 +14,14 @@ class DashboardCell: UICollectionViewCell {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var details: UILabel!
 
+    @IBOutlet weak var heartButton: UIButton! {
+        didSet {
+            heartButton.imageView?.image = #imageLiteral(resourceName: "heart_unselected").withRenderingMode(.alwaysTemplate)
+            heartButton.tintColor = .white
+        }
+    }
     var food: Food? {
         didSet {
-            //backgroundColor = Colors.Background.value
             foodImage.sd_setImage(with: URL(string: food?.imageURL ?? ""))
             title.text = food?.title ?? ""
             details.text = food?.description ?? ""

@@ -25,6 +25,7 @@ class DashboardController: UICollectionViewController {
         setupView()
         setupRx()
         viewModel.fetchData()
+        fetchUser()
     }
 
     fileprivate func setupView() {
@@ -34,6 +35,22 @@ class DashboardController: UICollectionViewController {
         let nib = UINib(nibName: "DashboardCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: cellId)
         collectionView.dataSource = nil
+        setupRightBarButton()
+    }
+
+    fileprivate func setupRightBarButton() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(handleLogout))
+    }
+
+    @objc func handleLogout() {
+        dismiss(animated: true, completion: nil)
+    }
+
+    fileprivate func fetchUser() {
+        let user = PersistanceManager.shared.fetch(UsersCoreData.self)
+        user.forEach { (value) in
+            print(value.email ?? "")
+        }
     }
 
     fileprivate func setupRx() {
@@ -46,6 +63,11 @@ class DashboardController: UICollectionViewController {
 
         viewModel.foodData.bind(to: collectionView.rx.items(cellIdentifier: cellId, cellType: DashboardCell.self)) { index, food, cell in
             cell.food = food
+            cell.heartButton.rx.tap
+                .subscribe({ [unowned self] _ in
+                    self.viewModel.saveToFavorite(for: index)
+            })
+            .disposed(by: self.viewModel.disposeBag)
         }
         .disposed(by: viewModel.disposeBag)
     }

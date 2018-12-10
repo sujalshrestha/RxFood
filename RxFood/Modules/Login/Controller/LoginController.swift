@@ -78,9 +78,10 @@ class LoginController: UIViewController {
 
     fileprivate func gotoDashboard() {
         if viewModel.isLoginValid() {
-            let layout = UICollectionViewFlowLayout()
-            let dashboardController = DashboardController(collectionViewLayout: layout)
-            self.navigationController?.pushViewController(dashboardController, animated: true)
+            //let layout = UICollectionViewFlowLayout()
+            //let dashboardController = DashboardController(collectionViewLayout: layout)
+            present(MainTabBarController(), animated: true, completion: nil)
+            //self.navigationController?.pushViewController(MainTabBarController(), animated: true)
         } else {
             AlertMessage.show(on: self, title: "Warning", message: "Incorrect email or password")
         }

@@ -18,27 +18,32 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DashboardCell" customModule="RxFood" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="199" height="290"/>
+            <rect key="frame" x="0.0" y="0.0" width="225" height="310"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="199" height="290"/>
+                <rect key="frame" x="0.0" y="0.0" width="225" height="310"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9x2-PK-q6D">
-                        <rect key="frame" x="0.0" y="0.0" width="199" height="217.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="225" height="232.5"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pg-77-DRb">
-                        <rect key="frame" x="10" y="222.5" width="179" height="20"/>
+                        <rect key="frame" x="10" y="237.5" width="205" height="20"/>
                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjb-Fc-ybW">
-                        <rect key="frame" x="10" y="247.5" width="179" height="18"/>
+                        <rect key="frame" x="10" y="262.5" width="205" height="18"/>
                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0I-vm-zp5">
+                        <rect key="frame" x="183" y="236.5" width="37" height="37"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="heart_unselected"/>
+                    </button>
                 </subviews>
             </view>
             <color key="backgroundColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -48,20 +53,26 @@
                 <constraint firstItem="9x2-PK-q6D" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IWh-hP-JVb"/>
                 <constraint firstAttribute="trailing" secondItem="Xjb-Fc-ybW" secondAttribute="trailing" constant="10" id="JSh-7G-baq"/>
                 <constraint firstItem="2Pg-77-DRb" firstAttribute="top" secondItem="9x2-PK-q6D" secondAttribute="bottom" constant="5" id="K3x-Dr-Qz9"/>
+                <constraint firstAttribute="trailing" secondItem="S0I-vm-zp5" secondAttribute="trailing" constant="5" id="Q4q-lm-1Ef"/>
                 <constraint firstItem="9x2-PK-q6D" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Qrd-g3-9xc"/>
+                <constraint firstItem="S0I-vm-zp5" firstAttribute="top" secondItem="9x2-PK-q6D" secondAttribute="bottom" constant="4" id="kcH-IW-tXh"/>
                 <constraint firstItem="2Pg-77-DRb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="qRl-XF-c4X"/>
                 <constraint firstItem="9x2-PK-q6D" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.75" id="rxY-8h-yQ9"/>
                 <constraint firstItem="Xjb-Fc-ybW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="tyi-rJ-Ceh"/>
                 <constraint firstItem="Xjb-Fc-ybW" firstAttribute="top" secondItem="2Pg-77-DRb" secondAttribute="bottom" constant="5" id="wGb-8K-JuQ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="199" height="290"/>
+            <size key="customSize" width="225" height="310"/>
             <connections>
                 <outlet property="details" destination="Xjb-Fc-ybW" id="BQr-yE-sfW"/>
                 <outlet property="foodImage" destination="9x2-PK-q6D" id="fUY-fJ-YUu"/>
+                <outlet property="heartButton" destination="S0I-vm-zp5" id="flE-5d-BD8"/>
                 <outlet property="title" destination="2Pg-77-DRb" id="weh-b5-VoT"/>
             </connections>
-            <point key="canvasLocation" x="-362.39999999999998" y="16.191904047976013"/>
+            <point key="canvasLocation" x="-285.60000000000002" y="-47.676161919040482"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="heart_unselected" width="37.5" height="37.5"/>
+    </resources>
 </document>

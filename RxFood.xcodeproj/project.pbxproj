@@ -19,6 +19,15 @@
 		0416448821B9840500F27B72 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416448721B9840500F27B72 /* LoginController.swift */; };
 		0416448E21B985B200F27B72 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0416448D21B985B200F27B72 /* Login.storyboard */; };
 		0416449121B98B1F00F27B72 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416449021B98B1F00F27B72 /* LoginViewModel.swift */; };
+		4215618521BE0FD300CB98A9 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215618421BE0FD300CB98A9 /* MainTabBarController.swift */; };
+		4215619B21BE1CB300CB98A9 /* UsersCoreData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215619721BE1CB300CB98A9 /* UsersCoreData+CoreDataClass.swift */; };
+		4215619C21BE1CB300CB98A9 /* UsersCoreData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215619821BE1CB300CB98A9 /* UsersCoreData+CoreDataProperties.swift */; };
+		4215619D21BE1CB300CB98A9 /* FavoritesFoodCoreData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215619921BE1CB300CB98A9 /* FavoritesFoodCoreData+CoreDataClass.swift */; };
+		4215619E21BE1CB300CB98A9 /* FavoritesFoodCoreData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215619A21BE1CB300CB98A9 /* FavoritesFoodCoreData+CoreDataProperties.swift */; };
+		421561A021BE1D2600CB98A9 /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215619F21BE1D2600CB98A9 /* PersistanceManager.swift */; };
+		421561A221BE2BA300CB98A9 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421561A121BE2BA300CB98A9 /* UserDefaultManager.swift */; };
+		421561A721BE369300CB98A9 /* FavoriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421561A621BE369300CB98A9 /* FavoriteController.swift */; };
+		421561A921BE36BF00CB98A9 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421561A821BE36BF00CB98A9 /* FavoriteViewModel.swift */; };
 		425A094921BA1F9500245E4C /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425A094821BA1F9500245E4C /* AlertMessage.swift */; };
 		425A094C21BA220C00245E4C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425A094B21BA220C00245E4C /* User.swift */; };
 		425A094E21BA239600245E4C /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425A094D21BA239600245E4C /* Validation.swift */; };
@@ -50,6 +59,15 @@
 		0416448D21B985B200F27B72 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		0416449021B98B1F00F27B72 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		1A31BF3A9AD72B8F8465B23D /* Pods-RxFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxFood/Pods-RxFood.debug.xcconfig"; sourceTree = "<group>"; };
+		4215618421BE0FD300CB98A9 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		4215619721BE1CB300CB98A9 /* UsersCoreData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsersCoreData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4215619821BE1CB300CB98A9 /* UsersCoreData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsersCoreData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4215619921BE1CB300CB98A9 /* FavoritesFoodCoreData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoritesFoodCoreData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4215619A21BE1CB300CB98A9 /* FavoritesFoodCoreData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoritesFoodCoreData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4215619F21BE1D2600CB98A9 /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
+		421561A121BE2BA300CB98A9 /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		421561A621BE369300CB98A9 /* FavoriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteController.swift; sourceTree = "<group>"; };
+		421561A821BE36BF00CB98A9 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		425A094821BA1F9500245E4C /* AlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
 		425A094B21BA220C00245E4C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		425A094D21BA239600245E4C /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
@@ -99,6 +117,7 @@
 		0416445F21B96A4A00F27B72 /* RxFood */ = {
 			isa = PBXGroup;
 			children = (
+				4215618E21BE1B6400CB98A9 /* CoreData */,
 				425A095921BA3CDC00245E4C /* Service */,
 				0416448C21B9859800F27B72 /* Storyboards */,
 				0416448421B983EC00F27B72 /* Modules */,
@@ -154,8 +173,10 @@
 		0416448421B983EC00F27B72 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				425A094F21BA244500245E4C /* Dashboard */,
+				4215618321BE0FC000CB98A9 /* MainTabBar */,
 				0416448521B983F300F27B72 /* Login */,
+				425A094F21BA244500245E4C /* Dashboard */,
+				421561A321BE367900CB98A9 /* Favorites */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -202,11 +223,57 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4215618321BE0FC000CB98A9 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4215618421BE0FD300CB98A9 /* MainTabBarController.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		4215618E21BE1B6400CB98A9 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4215619721BE1CB300CB98A9 /* UsersCoreData+CoreDataClass.swift */,
+				4215619821BE1CB300CB98A9 /* UsersCoreData+CoreDataProperties.swift */,
+				4215619921BE1CB300CB98A9 /* FavoritesFoodCoreData+CoreDataClass.swift */,
+				4215619A21BE1CB300CB98A9 /* FavoritesFoodCoreData+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		421561A321BE367900CB98A9 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				421561A521BE368300CB98A9 /* ViewModel */,
+				421561A421BE367E00CB98A9 /* Controller */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		421561A421BE367E00CB98A9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				421561A621BE369300CB98A9 /* FavoriteController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		421561A521BE368300CB98A9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				421561A821BE36BF00CB98A9 /* FavoriteViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		425A094721BA1F8A00245E4C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				425A094821BA1F9500245E4C /* AlertMessage.swift */,
 				425A094D21BA239600245E4C /* Validation.swift */,
+				4215619F21BE1D2600CB98A9 /* PersistanceManager.swift */,
+				421561A121BE2BA300CB98A9 /* UserDefaultManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -416,7 +483,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0416447E21B9837600F27B72 /* CustomUI+Ext.swift in Sources */,
+				4215619B21BE1CB300CB98A9 /* UsersCoreData+CoreDataClass.swift in Sources */,
 				425A094921BA1F9500245E4C /* AlertMessage.swift in Sources */,
+				4215618521BE0FD300CB98A9 /* MainTabBarController.swift in Sources */,
+				421561A721BE369300CB98A9 /* FavoriteController.swift in Sources */,
+				421561A221BE2BA300CB98A9 /* UserDefaultManager.swift in Sources */,
+				421561A921BE36BF00CB98A9 /* FavoriteViewModel.swift in Sources */,
 				425A094E21BA239600245E4C /* Validation.swift in Sources */,
 				425A095D21BA5FA100245E4C /* ApiClient.swift in Sources */,
 				0416446321B96A4A00F27B72 /* ViewController.swift in Sources */,
@@ -430,10 +502,14 @@
 				0416449121B98B1F00F27B72 /* LoginViewModel.swift in Sources */,
 				425A095521BA285700245E4C /* Colors.swift in Sources */,
 				0416446121B96A4A00F27B72 /* AppDelegate.swift in Sources */,
+				4215619D21BE1CB300CB98A9 /* FavoritesFoodCoreData+CoreDataClass.swift in Sources */,
+				4215619E21BE1CB300CB98A9 /* FavoritesFoodCoreData+CoreDataProperties.swift in Sources */,
 				0416447C21B9835800F27B72 /* Color+Ext.swift in Sources */,
+				421561A021BE1D2600CB98A9 /* PersistanceManager.swift in Sources */,
 				425A094C21BA220C00245E4C /* User.swift in Sources */,
 				0416448821B9840500F27B72 /* LoginController.swift in Sources */,
 				425A096921BA7ADA00245E4C /* ViewController+Ext.swift in Sources */,
+				4215619C21BE1CB300CB98A9 /* UsersCoreData+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
