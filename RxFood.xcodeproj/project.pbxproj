@@ -28,6 +28,8 @@
 		421561A221BE2BA300CB98A9 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421561A121BE2BA300CB98A9 /* UserDefaultManager.swift */; };
 		421561A721BE369300CB98A9 /* FavoriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421561A621BE369300CB98A9 /* FavoriteController.swift */; };
 		421561A921BE36BF00CB98A9 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421561A821BE36BF00CB98A9 /* FavoriteViewModel.swift */; };
+		421561AE21BE64E900CB98A9 /* CollageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421561AD21BE64E900CB98A9 /* CollageController.swift */; };
+		421561B021BE770B00CB98A9 /* CollageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421561AF21BE770B00CB98A9 /* CollageViewModel.swift */; };
 		425A094921BA1F9500245E4C /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425A094821BA1F9500245E4C /* AlertMessage.swift */; };
 		425A094C21BA220C00245E4C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425A094B21BA220C00245E4C /* User.swift */; };
 		425A094E21BA239600245E4C /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425A094D21BA239600245E4C /* Validation.swift */; };
@@ -68,6 +70,8 @@
 		421561A121BE2BA300CB98A9 /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 		421561A621BE369300CB98A9 /* FavoriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteController.swift; sourceTree = "<group>"; };
 		421561A821BE36BF00CB98A9 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		421561AD21BE64E900CB98A9 /* CollageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageController.swift; sourceTree = "<group>"; };
+		421561AF21BE770B00CB98A9 /* CollageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageViewModel.swift; sourceTree = "<group>"; };
 		425A094821BA1F9500245E4C /* AlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
 		425A094B21BA220C00245E4C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		425A094D21BA239600245E4C /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 		0416448421B983EC00F27B72 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				421561AA21BE64CA00CB98A9 /* Collage */,
 				4215618321BE0FC000CB98A9 /* MainTabBar */,
 				0416448521B983F300F27B72 /* Login */,
 				425A094F21BA244500245E4C /* Dashboard */,
@@ -263,6 +268,31 @@
 			isa = PBXGroup;
 			children = (
 				421561A821BE36BF00CB98A9 /* FavoriteViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		421561AA21BE64CA00CB98A9 /* Collage */ = {
+			isa = PBXGroup;
+			children = (
+				421561AC21BE64DB00CB98A9 /* ViewModel */,
+				421561AB21BE64D400CB98A9 /* Controller */,
+			);
+			path = Collage;
+			sourceTree = "<group>";
+		};
+		421561AB21BE64D400CB98A9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				421561AD21BE64E900CB98A9 /* CollageController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		421561AC21BE64DB00CB98A9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				421561AF21BE770B00CB98A9 /* CollageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -453,6 +483,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxFood/Pods-RxFood-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CollageView/CollageView.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -463,6 +494,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollageView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -487,6 +519,7 @@
 				425A094921BA1F9500245E4C /* AlertMessage.swift in Sources */,
 				4215618521BE0FD300CB98A9 /* MainTabBarController.swift in Sources */,
 				421561A721BE369300CB98A9 /* FavoriteController.swift in Sources */,
+				421561AE21BE64E900CB98A9 /* CollageController.swift in Sources */,
 				421561A221BE2BA300CB98A9 /* UserDefaultManager.swift in Sources */,
 				421561A921BE36BF00CB98A9 /* FavoriteViewModel.swift in Sources */,
 				425A094E21BA239600245E4C /* Validation.swift in Sources */,
@@ -499,6 +532,7 @@
 				0416447A21B9833900F27B72 /* AutoLayout+Ext.swift in Sources */,
 				425A096621BA6F4300245E4C /* DashboardCell.swift in Sources */,
 				425A095821BA3C9D00245E4C /* FoodsModel.swift in Sources */,
+				421561B021BE770B00CB98A9 /* CollageViewModel.swift in Sources */,
 				0416449121B98B1F00F27B72 /* LoginViewModel.swift in Sources */,
 				425A095521BA285700245E4C /* Colors.swift in Sources */,
 				0416446121B96A4A00F27B72 /* AppDelegate.swift in Sources */,

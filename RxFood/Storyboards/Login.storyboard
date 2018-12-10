@@ -88,5 +88,67 @@
             </objects>
             <point key="canvasLocation" x="191" y="45"/>
         </scene>
+        <!--Collage Controller-->
+        <scene sceneID="hij-ke-AsE">
+            <objects>
+                <viewController storyboardIdentifier="collage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BBc-Jg-3s9" customClass="CollageController" customModule="RxFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7vB-z9-p58">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2z-Wp-O8H" customClass="CollageView" customModule="CollageView">
+                                <rect key="frame" x="40" y="60" width="295" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="G6G-bQ-GTi"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoG-np-igB">
+                                <rect key="frame" x="40" y="350" width="80" height="44"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1Em-dk-T48"/>
+                                    <constraint firstAttribute="width" constant="80" id="X7K-Xb-N4c"/>
+                                </constraints>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDa-VT-vah">
+                                <rect key="frame" x="255" y="350" width="80" height="44"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.70980392160000005" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="PWm-OC-vIb"/>
+                                    <constraint firstAttribute="height" constant="44" id="QKn-Kf-ZYt"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="bXj-rJ-8VG"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="osk-YW-8BP"/>
+                                </constraints>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FoG-np-igB" firstAttribute="leading" secondItem="O87-Uw-a31" secondAttribute="leading" constant="40" id="Hmj-o3-bBl"/>
+                            <constraint firstItem="g2z-Wp-O8H" firstAttribute="top" secondItem="O87-Uw-a31" secondAttribute="top" constant="40" id="SQy-EF-8sK"/>
+                            <constraint firstItem="FoG-np-igB" firstAttribute="top" secondItem="g2z-Wp-O8H" secondAttribute="bottom" constant="40" id="TXe-Qa-sZu"/>
+                            <constraint firstItem="g2z-Wp-O8H" firstAttribute="leading" secondItem="O87-Uw-a31" secondAttribute="leading" constant="40" id="VgP-V2-vuq"/>
+                            <constraint firstItem="O87-Uw-a31" firstAttribute="trailing" secondItem="lDa-VT-vah" secondAttribute="trailing" constant="40" id="a1t-bg-9x0"/>
+                            <constraint firstItem="O87-Uw-a31" firstAttribute="trailing" secondItem="g2z-Wp-O8H" secondAttribute="trailing" constant="40" id="roq-en-ZfS"/>
+                            <constraint firstItem="lDa-VT-vah" firstAttribute="top" secondItem="g2z-Wp-O8H" secondAttribute="bottom" constant="40" id="ygo-eJ-QdO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O87-Uw-a31"/>
+                    </view>
+                    <connections>
+                        <outlet property="clearButton" destination="FoG-np-igB" id="BlJ-0J-KSt"/>
+                        <outlet property="collageImage" destination="g2z-Wp-O8H" id="k1x-pz-C07"/>
+                        <outlet property="saveButton" destination="lDa-VT-vah" id="X6g-mh-wmZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ag-df-92u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1035" y="41"/>
+        </scene>
     </scenes>
 </document>

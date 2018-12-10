@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D23B69757C5A968FB467C00DA6EE3728"
-               BlueprintName = "RxCocoa"
+               BlueprintIdentifier = "018A9A624C9BA15AA40687D1EC30C3A3"
+               BlueprintName = "CollageView"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "RxCocoa.framework">
+               BuildableName = "CollageView.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

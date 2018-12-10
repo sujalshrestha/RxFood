@@ -11,5 +11,6 @@ pod 'RxCocoa',    '~> 4.0'
 pod 'Moya/RxSwift', '~> 12.0'
 pod 'MBProgressHUD', '~> 1.1.0'
 pod 'SDWebImage', '~> 4.0'
+pod 'CollageView', '~> 1.0.4'
 
 end

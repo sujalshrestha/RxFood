@@ -25,8 +25,13 @@ class MainTabBarController: UITabBarController {
         let favoriteItem = UITabBarItem(title: "Favorite", image: #imageLiteral(resourceName: "heart_unselected").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "heart_selected").withRenderingMode(.alwaysOriginal))
         favorite.tabBarItem = favoriteItem
 
+        let collageBoard = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "collage")
+        let collage = UINavigationController(rootViewController: collageBoard)
+        let collageItem = UITabBarItem(title: "Collage", image: #imageLiteral(resourceName: "album_unselected").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "album_selected").withRenderingMode(.alwaysOriginal))
+        collage.tabBarItem = collageItem
+
         tabBar.tintColor = .black
 
-        viewControllers = [dashboard, favorite]
+        viewControllers = [dashboard, favorite, collage]
     }
 }
