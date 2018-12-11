@@ -20,12 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
 
-//        let loginController = UIStoryboard.init(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "login")
-//        window?.rootViewController = UINavigationController(rootViewController: loginController)
+        let loginController = UIStoryboard.init(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "login")
+        window?.rootViewController = UINavigationController(rootViewController: loginController)
 
-        let collage = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "collage")
-        window?.rootViewController = UINavigationController(rootViewController: collage)
-        
+//        let collage = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "collage")
+//        window?.rootViewController = UINavigationController(rootViewController: collage)
+//        
         return true
     }
 

@@ -103,6 +103,12 @@
                                     <constraint firstAttribute="height" constant="250" id="G6G-bQ-GTi"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click + icon to add images" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUg-EX-72u">
+                                <rect key="frame" x="20" y="120" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoG-np-igB">
                                 <rect key="frame" x="40" y="350" width="80" height="44"/>
                                 <color key="backgroundColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -131,10 +137,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="FoG-np-igB" firstAttribute="leading" secondItem="O87-Uw-a31" secondAttribute="leading" constant="40" id="Hmj-o3-bBl"/>
+                            <constraint firstItem="AUg-EX-72u" firstAttribute="top" secondItem="O87-Uw-a31" secondAttribute="top" constant="100" id="PbD-WZ-Gae"/>
                             <constraint firstItem="g2z-Wp-O8H" firstAttribute="top" secondItem="O87-Uw-a31" secondAttribute="top" constant="40" id="SQy-EF-8sK"/>
                             <constraint firstItem="FoG-np-igB" firstAttribute="top" secondItem="g2z-Wp-O8H" secondAttribute="bottom" constant="40" id="TXe-Qa-sZu"/>
                             <constraint firstItem="g2z-Wp-O8H" firstAttribute="leading" secondItem="O87-Uw-a31" secondAttribute="leading" constant="40" id="VgP-V2-vuq"/>
                             <constraint firstItem="O87-Uw-a31" firstAttribute="trailing" secondItem="lDa-VT-vah" secondAttribute="trailing" constant="40" id="a1t-bg-9x0"/>
+                            <constraint firstItem="O87-Uw-a31" firstAttribute="trailing" secondItem="AUg-EX-72u" secondAttribute="trailing" constant="20" id="a4r-Sx-Fxf"/>
+                            <constraint firstItem="AUg-EX-72u" firstAttribute="leading" secondItem="O87-Uw-a31" secondAttribute="leading" constant="20" id="bmx-9U-uzt"/>
                             <constraint firstItem="O87-Uw-a31" firstAttribute="trailing" secondItem="g2z-Wp-O8H" secondAttribute="trailing" constant="40" id="roq-en-ZfS"/>
                             <constraint firstItem="lDa-VT-vah" firstAttribute="top" secondItem="g2z-Wp-O8H" secondAttribute="bottom" constant="40" id="ygo-eJ-QdO"/>
                         </constraints>
@@ -143,12 +152,13 @@
                     <connections>
                         <outlet property="clearButton" destination="FoG-np-igB" id="BlJ-0J-KSt"/>
                         <outlet property="collageImage" destination="g2z-Wp-O8H" id="k1x-pz-C07"/>
+                        <outlet property="noImageLabel" destination="AUg-EX-72u" id="VQh-bX-Eij"/>
                         <outlet property="saveButton" destination="lDa-VT-vah" id="X6g-mh-wmZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ag-df-92u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1035" y="41"/>
+            <point key="canvasLocation" x="1034.4000000000001" y="40.929535232383813"/>
         </scene>
     </scenes>
 </document>

@@ -14,6 +14,7 @@ class CollageController: UIViewController {
     @IBOutlet weak var collageImage: CollageView!
     @IBOutlet weak var clearButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var noImageLabel: UILabel!
 
     let viewModel = CollageViewModel()
 
@@ -29,7 +30,6 @@ class CollageController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         collageImage.dataSource = self
         collageImage.delegate = self
-
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(handleAdd))
     }
 
@@ -42,11 +42,65 @@ class CollageController: UIViewController {
     }
 
     fileprivate func setupRx() {
-        viewModel.images.subscribe(onNext: { [weak self] _ in
+        viewModel.images.subscribe(onNext: { [weak self] imageArray in
             guard let self = self else { return }
+            self.noImageLabel.isHidden = imageArray.isEmpty ? false : true
             self.collageImage.reload()
         })
         .disposed(by: viewModel.disposeBag)
+
+        clearButton.rx.tap
+            .subscribe({ [unowned self] _ in
+                self.removeAllImage()
+            })
+            .disposed(by: viewModel.disposeBag)
+
+        saveButton.rx.tap
+            .subscribe { [unowned self] _ in
+                self.saveImage()
+            }
+            .disposed(by: viewModel.disposeBag)
+
+        viewModel.images
+            .map({ !$0.isEmpty })
+            .bind(to: saveButton.rx.isEnabled)
+            .disposed(by: viewModel.disposeBag)
+
+        viewModel.images
+            .map({ !$0.isEmpty })
+            .bind(to: clearButton.rx.isEnabled)
+            .disposed(by: viewModel.disposeBag)
+
+    }
+
+    fileprivate func removeAllImage() {
+        AlertMessage.showWithCancel(on: self, title: nil, message: "Are you sure you want to clear all images?", onOk: {
+            self.viewModel.removeAllImages()
+        }, onCancel: nil)
+    }
+
+    fileprivate func saveImage() {
+        guard let finalImage = image(with: collageImage) else { return }
+        UIImageWriteToSavedPhotosAlbum(finalImage, self, #selector(imageSave(_:didFinishSavingWithError:contextInfo:)), nil)
+    }
+
+    @objc func imageSave(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        if let error = error {
+            AlertMessage.show(on: self, title: "Error", message: error.localizedDescription)
+        } else {
+            AlertMessage.show(on: self, title: "Success", message: "Image saved")
+        }
+    }
+
+    func image(with view: UIView) -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.isOpaque, 0.0)
+        defer { UIGraphicsEndImageContext() }
+        if let context = UIGraphicsGetCurrentContext() {
+            view.layer.render(in: context)
+            let image = UIGraphicsGetImageFromCurrentImageContext()
+            return image
+        }
+        return nil
     }
 
 }
@@ -76,6 +130,11 @@ extension CollageController: CollageViewDataSource {
 extension CollageController: CollageViewDelegate {
     func collageView(_ collageView: CollageView, didSelect itemView: CollageItemView, at index: Int) {
         print("Item selected at \(index)")
+        AlertMessage.showWithCancel(on: self, title: nil   , message: "Are you sure you want to delete this image?", onOk: { [weak self] in
+            guard let self = self else { return }
+            self.viewModel.deleteImage(at: index)
+        },
+        onCancel: nil)
     }
 
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

@@ -27,4 +27,14 @@ struct CollageViewModel {
             return Disposables.create()
         })
     }
+
+    func deleteImage(at index: Int) {
+        var imageArray = images.value
+        imageArray.remove(at: index)
+        images.accept(imageArray)
+    }
+
+    func removeAllImages() {
+        images.accept([])
+    }
 }
