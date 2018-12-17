@@ -70,7 +70,6 @@ class CollageController: UIViewController {
             .map({ !$0.isEmpty })
             .bind(to: clearButton.rx.isEnabled)
             .disposed(by: viewModel.disposeBag)
-
     }
 
     fileprivate func removeAllImage() {

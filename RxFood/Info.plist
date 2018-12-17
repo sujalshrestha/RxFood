@@ -51,5 +51,7 @@
 	<string>RxFood would like to add photos to your device</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>RxFood would like to access your photos</string>
+	<key>NSContactsUsageDescription</key>
+	<string>RxFood would like to access your contacts</string>
 </dict>
 </plist>
