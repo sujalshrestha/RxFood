@@ -70,6 +70,13 @@ class DashboardController: UICollectionViewController {
             .disposed(by: self.viewModel.disposeBag)
         }
         .disposed(by: viewModel.disposeBag)
+
+        viewModel.isNetworkOk.subscribe(onNext: { [unowned self] (status) in
+            if !status {
+                AlertMessage.show(on: self, title: "Error", message: self.viewModel.networkMessage.value)
+            }
+        })
+        .disposed(by: viewModel.disposeBag)
     }
 
 }

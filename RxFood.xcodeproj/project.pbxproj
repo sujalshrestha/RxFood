@@ -31,6 +31,10 @@
 		421561AE21BE64E900CB98A9 /* CollageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421561AD21BE64E900CB98A9 /* CollageController.swift */; };
 		421561B021BE770B00CB98A9 /* CollageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421561AF21BE770B00CB98A9 /* CollageViewModel.swift */; };
 		422D72EC21C76AE7001896E4 /* ContactsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422D72EB21C76AE7001896E4 /* ContactsController.swift */; };
+		422D730E21C7B50B001896E4 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422D730D21C7B50B001896E4 /* SearchController.swift */; };
+		422D731121C7B836001896E4 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422D731021C7B836001896E4 /* SearchViewModel.swift */; };
+		422D731321C7BAA2001896E4 /* RepoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422D731221C7BAA2001896E4 /* RepoService.swift */; };
+		422D731621C7BC8C001896E4 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422D731521C7BC8C001896E4 /* SearchModel.swift */; };
 		424DE1CA21C0B831004807AE /* ExamplesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424DE1C921C0B831004807AE /* ExamplesVC.swift */; };
 		425A094921BA1F9500245E4C /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425A094821BA1F9500245E4C /* AlertMessage.swift */; };
 		425A094C21BA220C00245E4C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425A094B21BA220C00245E4C /* User.swift */; };
@@ -44,6 +48,7 @@
 		425A096621BA6F4300245E4C /* DashboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425A096421BA6F4300245E4C /* DashboardCell.swift */; };
 		425A096721BA6F4300245E4C /* DashboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425A096521BA6F4300245E4C /* DashboardCell.xib */; };
 		425A096921BA7ADA00245E4C /* ViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425A096821BA7ADA00245E4C /* ViewController+Ext.swift */; };
+		42D4C3EA21C8C81800927E84 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D4C3E921C8C81800927E84 /* ServiceManager.swift */; };
 		7E9EA484CA6CFA433B007A9C /* Pods_RxFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6433991FD7402A7D9B916352 /* Pods_RxFood.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +80,10 @@
 		421561AD21BE64E900CB98A9 /* CollageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageController.swift; sourceTree = "<group>"; };
 		421561AF21BE770B00CB98A9 /* CollageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageViewModel.swift; sourceTree = "<group>"; };
 		422D72EB21C76AE7001896E4 /* ContactsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
+		422D730D21C7B50B001896E4 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		422D731021C7B836001896E4 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		422D731221C7BAA2001896E4 /* RepoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoService.swift; sourceTree = "<group>"; };
+		422D731521C7BC8C001896E4 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		424DE1C921C0B831004807AE /* ExamplesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesVC.swift; sourceTree = "<group>"; };
 		425A094821BA1F9500245E4C /* AlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
 		425A094B21BA220C00245E4C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -88,6 +97,7 @@
 		425A096421BA6F4300245E4C /* DashboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCell.swift; sourceTree = "<group>"; };
 		425A096521BA6F4300245E4C /* DashboardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCell.xib; sourceTree = "<group>"; };
 		425A096821BA7ADA00245E4C /* ViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ext.swift"; sourceTree = "<group>"; };
+		42D4C3E921C8C81800927E84 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		6433991FD7402A7D9B916352 /* Pods_RxFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A62C239EB6099A9FB58C95 /* Pods-RxFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFood.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxFood/Pods-RxFood.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,6 +191,7 @@
 		0416448421B983EC00F27B72 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				422D730B21C7B4EC001896E4 /* Search */,
 				422D72EA21C76ADB001896E4 /* Contacts */,
 				424DE1C821C0B820004807AE /* Examples */,
 				421561AA21BE64CA00CB98A9 /* Collage */,
@@ -311,6 +322,40 @@
 			path = Contacts;
 			sourceTree = "<group>";
 		};
+		422D730B21C7B4EC001896E4 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				422D731421C7BC81001896E4 /* Model */,
+				422D730F21C7B827001896E4 /* ViewModel */,
+				422D730C21C7B4F9001896E4 /* Controller */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		422D730C21C7B4F9001896E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				422D730D21C7B50B001896E4 /* SearchController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		422D730F21C7B827001896E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				422D731021C7B836001896E4 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		422D731421C7BC81001896E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				422D731521C7BC8C001896E4 /* SearchModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		424DE1C821C0B820004807AE /* Examples */ = {
 			isa = PBXGroup;
 			children = (
@@ -378,6 +423,8 @@
 			children = (
 				425A095A21BA3CF400245E4C /* FoodService.swift */,
 				425A095C21BA5FA100245E4C /* ApiClient.swift */,
+				422D731221C7BAA2001896E4 /* RepoService.swift */,
+				42D4C3E921C8C81800927E84 /* ServiceManager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -539,10 +586,12 @@
 				0416447E21B9837600F27B72 /* CustomUI+Ext.swift in Sources */,
 				4215619B21BE1CB300CB98A9 /* UsersCoreData+CoreDataClass.swift in Sources */,
 				425A094921BA1F9500245E4C /* AlertMessage.swift in Sources */,
+				422D731621C7BC8C001896E4 /* SearchModel.swift in Sources */,
 				4215618521BE0FD300CB98A9 /* MainTabBarController.swift in Sources */,
 				421561A721BE369300CB98A9 /* FavoriteController.swift in Sources */,
 				421561AE21BE64E900CB98A9 /* CollageController.swift in Sources */,
 				421561A221BE2BA300CB98A9 /* UserDefaultManager.swift in Sources */,
+				42D4C3EA21C8C81800927E84 /* ServiceManager.swift in Sources */,
 				421561A921BE36BF00CB98A9 /* FavoriteViewModel.swift in Sources */,
 				425A094E21BA239600245E4C /* Validation.swift in Sources */,
 				425A095D21BA5FA100245E4C /* ApiClient.swift in Sources */,
@@ -550,11 +599,13 @@
 				425A095B21BA3CF400245E4C /* FoodService.swift in Sources */,
 				425A095221BA245B00245E4C /* DashboardController.swift in Sources */,
 				0416446921B96A4A00F27B72 /* RxFood.xcdatamodeld in Sources */,
+				422D731121C7B836001896E4 /* SearchViewModel.swift in Sources */,
 				425A096021BA6EA200245E4C /* DashboardViewModel.swift in Sources */,
 				0416447A21B9833900F27B72 /* AutoLayout+Ext.swift in Sources */,
 				425A096621BA6F4300245E4C /* DashboardCell.swift in Sources */,
 				425A095821BA3C9D00245E4C /* FoodsModel.swift in Sources */,
 				421561B021BE770B00CB98A9 /* CollageViewModel.swift in Sources */,
+				422D730E21C7B50B001896E4 /* SearchController.swift in Sources */,
 				0416449121B98B1F00F27B72 /* LoginViewModel.swift in Sources */,
 				425A095521BA285700245E4C /* Colors.swift in Sources */,
 				0416446121B96A4A00F27B72 /* AppDelegate.swift in Sources */,
@@ -568,6 +619,7 @@
 				0416448821B9840500F27B72 /* LoginController.swift in Sources */,
 				425A096921BA7ADA00245E4C /* ViewController+Ext.swift in Sources */,
 				4215619C21BE1CB300CB98A9 /* UsersCoreData+CoreDataProperties.swift in Sources */,
+				422D731321C7BAA2001896E4 /* RepoService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

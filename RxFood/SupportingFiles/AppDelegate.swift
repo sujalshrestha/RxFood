@@ -23,8 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let loginController = UIStoryboard.init(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "login")
 //        window?.rootViewController = UINavigationController(rootViewController: loginController)
 
-        window?.rootViewController = UINavigationController(rootViewController: ContactsController())
-//        
+        let layout = UICollectionViewFlowLayout()
+        window?.rootViewController = UINavigationController(rootViewController: DashboardController(collectionViewLayout: layout))
+
+        //window?.rootViewController = UINavigationController(rootViewController: SearchController())
+
         return true
     }
 

@@ -15,13 +15,21 @@ struct DashboardViewModel {
     let foodData = BehaviorRelay<[Food]>.init(value: [])
     let apiClient = ApiClient()
     let showHud = BehaviorRelay<Bool>.init(value: false)
+    let isNetworkOk = BehaviorRelay<Bool>.init(value: true)
+    let networkMessage = BehaviorRelay<String>.init(value: "")
 
     func fetchData() {
         showHud.accept(true)
-        apiClient.getFoodData(disposeBag: disposeBag) { (foods) in
+
+        apiClient.getFoodData(disposeBag: disposeBag, completion: { (foods) in
             self.foodData.accept(foods.foods)
             self.showHud.accept(false)
-        }
+        }, failure: { (error) in
+            self.showHud.accept(false)
+            print("E: ", error)
+            self.networkMessage.accept(error)
+            self.isNetworkOk.accept(false)
+        })
     }
 
     func saveToFavorite(for index: Int) {
