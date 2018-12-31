@@ -40,7 +40,6 @@ class ContactsController: UIViewController {
                     print("err: ", err)
                 }
 
-
             } else {
                 print("denied")
             }

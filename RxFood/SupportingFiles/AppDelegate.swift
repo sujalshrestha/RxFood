@@ -13,6 +13,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var appCoordinator: AppCoordinator!
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -23,10 +24,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let loginController = UIStoryboard.init(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "login")
 //        window?.rootViewController = UINavigationController(rootViewController: loginController)
 
-        let layout = UICollectionViewFlowLayout()
-        window?.rootViewController = UINavigationController(rootViewController: DashboardController(collectionViewLayout: layout))
+//        let layout = UICollectionViewFlowLayout()
+//        window?.rootViewController = UINavigationController(rootViewController: DashboardController(collectionViewLayout: layout))
 
-        //window?.rootViewController = UINavigationController(rootViewController: SearchController())
+        appCoordinator = AppCoordinator(window: window)
+        appCoordinator.start()
+
+       // window?.rootViewController = UINavigationController(rootViewController: ChooseVC())
 
         return true
     }

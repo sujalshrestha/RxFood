@@ -13,8 +13,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
-        getFavorites()
+        //getFavorites()
+        isValid()
     }
+
+    fileprivate func isValid() {
+        let username = "asdssssss"
+        let password = "1233123"
+        let email = "avc@adsa.com"
+
+        let lengthValidator = Validator(strategy: LengthValidateStrategy(count: 5))
+        let emailValidator = Validator(strategy: EmailValidateStrategy())
+
+        if lengthValidator.isValid(username) && lengthValidator.isValid(password) && emailValidator.isValid(email) {
+            print("Valid")
+        } else {
+            print("Invalid")
+        }
+    } 
 
     fileprivate func getFavorites() {
         let user = PersistanceManager.shared.fetchWithPredicate(UsersCoreData.self, with: String(UserDefaultManager.shared.getUserId()))
