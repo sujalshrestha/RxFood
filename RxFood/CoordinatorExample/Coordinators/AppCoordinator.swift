@@ -25,6 +25,7 @@ class AppCoordinator: BaseCoordinator {
     }
 
     override func start() {
+        window?.rootViewController = nil
         if !showDashboard {
             showLangingPage()
         } else {
@@ -46,8 +47,10 @@ class AppCoordinator: BaseCoordinator {
     }
 
     func gotoDashboard() {
-        let dashboardCoordinator = DashboardCoordinator(navigation: rootNavigation)
-        coordinate(to: dashboardCoordinator)
-        window?.rootViewController = rootNavigation
+        let tabBarCoordinator = TabBarCoordinator(navigation: rootNavigation)
+        coordinate(to: tabBarCoordinator)
+
+//        let mainTabBar = TabBarController(navigation: rootNavigation)
+//        window?.rootViewController = mainTabBar
     }
 }
